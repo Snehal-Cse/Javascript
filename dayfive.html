@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dayfive.js" defer></script>
+    <title>Document</title>
+</head>
+<style>
+    *{
+  box-sizing: border-box;
+  padding:0px;
+  margin:0px;
+}
+nav{
+    background-image: url(https://c0.wallpaperflare.com/preview/934/105/169/background-close-up-color-colour.jpg);
+   background-repeat: no-repeat;
+   min-height: 70vh;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  position:relative;
+
+}
+.navDetails{
+  max-width: 1200px;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+  font-size: 24px;
+  margin: auto;
+  min-height: 12vh;
+}
+.navDetails #logo{
+  min-width: 90vh;
+  text-align: left;
+}
+.navDetails a{
+    min-width: 33vh;
+      text-decoration: none;
+      color:white;
+      justify-content: space-between;
+      text-align: center;
+      display:flex;
+}
+.headline{
+  position:absolute;
+  top:45%;
+  left:45%;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.headline h3{
+  padding-bottom: 10px;
+}
+.headline button{
+  padding:5px;
+  border-radius: 8px;
+  font-weight: 800;
+  cursor:pointer;
+}
+.section-todo{
+  margin-top:1.8rem;
+  text-align: center;
+}
+.section-todo h2{
+  padding-bottom:15px;
+}
+.section-form {
+  /* border: 2px solid rgb(80, 79, 79); */
+  max-width: 124vh;
+  display: flex;
+  min-height: 5vh;
+  margin-left: 306px;
+  justify-content: space-between;
+}
+.section-form input[type="text"]{
+      width:75%;
+      padding-left:3px;
+}
+.section-form input[type="submit"]{
+  width:20%;
+  border:1px black;
+  border-radius: 0%;
+  color:rgb(26, 26, 26);
+  background-color: grey;
+  box-shadow: none;
+}
+.todoList li{
+    border:2px solid black;
+    max-width:94vh; 
+    position:relative;
+    left:21.5%;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 1rem;
+    padding:0.4rem;
+    background-color: grey;
+    color:black;
+    min-height:2vh;
+    display:flex;
+    text-align: start;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.todoList li .todo_button{
+   margin-left:25rem;
+   
+}
+.todo_button .button1{
+  padding-top:0.3rem;
+  padding-right:0.5rem;
+  padding-bottom:0.3rem;
+  padding-left:0.5rem; 
+  font-weight: bolder;
+  
+}
+.todo_button .button2{
+  padding-top:0.3rem;
+  padding-right:0.5rem;
+  padding-bottom:0.3rem;
+  padding-left:0.5rem; 
+  font-weight: bolder;
+}
+
+.section-signUp{
+  margin-top: 2.2rem;
+  position: relative;
+  left: 22rem;
+  max-width: 730px;
+  background-color: #d3d1d1;
+  min-height:420px;
+}
+.section-signUp h2{
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.newform {
+  margin-left: 54px;
+  margin-top: 24px;
+}
+.newform h4{
+  padding-bottom:6px;
+  padding-top: 4px;
+}
+.newform input[type="text"]{
+  min-width: 37rem;
+  color:black;
+}
+.newform input[type="password"]{
+  min-width: 37rem;
+  color:black;
+}
+.newform input[type="textArea"]{
+  min-width: 37rem;
+  min-height:5rem;
+  text-align: top;
+  color:black;
+}
+.final{
+  margin-top: 1.3rem;
+  margin-left: 16rem;
+}
+.final input{
+  padding: 4px;
+padding-right: 15px;
+padding-left: 15px;
+background-color: gray;
+}
+</style>
+<body>
+<header>
+    <nav>
+        <ul class = "navDetails">
+        <h1 id="logo">Website</h1>
+            <li><a href ="">Home</a></li>
+            <li><a href ="">Todo</a></li>
+            <li><a href ="">SignUp</a></li>
+        </ul>
+        <div class="headline">
+            <h3>Manage your task</h3>
+        <button>Learn More</button>
+        </div>
+    </nav>
+</header>
+<section class = "section-todo">
+    <h2>Your Plans For Today?</h2>
+   <form class="section-form">
+<input type="text" name="" id="" placeholder="Add Todo">
+    <input type ="submit" value="Add Todo">
+   </form>
+   <ul class="todoList">
+    <li>
+    <span class="text">Learn Js</span>
+    <div class="todo_button">
+      <button class="button1">Done</button>
+      <button class="button2">Remove</button>
+    </div>
+  </li>
+   </ul>
+</section>
+<section class="section-signUp">
+        <h2>Sign Up</h2>
+        <form class="newform">
+            <h4>UserName</h4>
+            <input type="text" name="shishi" id = "" placeholer="Enter your name">
+            <h4>PassWord</h4>
+            <input type="password" placeholer="Enter password">
+            <h4>Confirm Password</h4>
+            <input type="Password" placeholer="Confirm password">
+             <h4>Email</h4>
+            <input type="text" placeholer="Enter Email">
+            <h4>About Yourself</h4>
+            <input type="textArea" value="">
+           <div class="final"> <input type="submit"value="Submit"></div>
+        </form>
+</section>
+</body>
+</html>
